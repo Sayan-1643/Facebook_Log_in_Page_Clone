@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in to Facebook</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 79.5vh;
+            background: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+        }
+
+        .assembler {
+            width: 398px;
+            height: 394px;
+            margin: 35px 0px 0px 0px;
+        }
+
+        .fb {
+            display: flex;
+            justify-content: center;
+        }
+
+        .img {
+            margin: 0px 0px 0px 0px;
+        }
+
+        .login {
+            width: 398px;
+            height: 314px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+        }
+
+        .text_p {
+            width: 100%;
+            height: 62px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text_c {
+            font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+            font-size: 18px;
+        }
+
+        .flex_cont {
+            width: 398px;
+            height: 64px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .credential {
+            width: 330px;
+            height: 22px;
+            border: 2px solid #f0f2f5;
+            border-radius: 6px;
+            font-size: 17px;
+            font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+            padding: 14px 16px;
+            color: #8c8c8c;
+        }
+
+        #butn {
+            width: 366px;
+            height: 54px;
+            background-color: #2c7ae0;
+            color: white;
+            border-radius: 6px;
+            font-size: 20px;
+            font-family: Helvetica, Arial, sans-serif;
+            font-weight: bold;
+        }
+
+        #butn:hover {
+            cursor: pointer;
+            background-color: #166fe5;
+            ;
+        }
+
+        .link_flex_cont {
+            padding: 12px 0 18px;
+            width: 398px;
+            height: 42px;
+            text-align: center;
+        }
+
+        a {
+            color: #1877f2;
+            text-decoration: none;
+            font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="assembler">
+            <div class="fb">
+                <div class="img">
+                    <img src="https://static.xx.fbcdn.net/rsrc.php/yI/r/4aAhOWlwaXf.svg" alt="Facebook" width="240px"
+                        height="80px">
+                </div>
+            </div>
+
+
+            <div class="login">
+
+                <div class="text_p">
+                    <div class="text_c">Log in to Facebook</div>
+                </div>
+
+                <div class="flex_cont">
+                    <input type="email" class="credential" placeholder="Email address or phone number">
+                </div>
+
+                <div class="flex_cont">
+                    <input type="password" class="credential" placeholder="Password">
+                </div>
+
+                <div class="flex_cont">
+                    <a href="#"><button id="butn">Log in</button></a>
+                </div>
+
+                <div class="link_flex_cont">
+                    <a href="#">Forgotten account?</a>
+                    <span role="presentation" aria-hidden="true"> · </span>
+                    <a href="#">Sign up for Facebook</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
